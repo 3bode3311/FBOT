@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 'p!'
+const prefix = '+'
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 client.on('ready', function(){
     var ms = 100000 ;
-    var setGame = [`p!help `,`PLAY IN BRG CLAN`];
+    var setGame = [`+help `,`PLAY IN BRG CLAN`];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -22,7 +22,7 @@ client.on('ready', function(){
 
 });
 client.on("message", message => {
-    if (message.content === (prefix + "p!help")) {
+    if (message.content === (prefix + "help")) {
      const embed = new Discord.RichEmbed() 
          .setColor("#580e6b")
          .setThumbnail(message.author.avatarURL)
@@ -37,59 +37,59 @@ client.on("message", message => {
 
            General Commands
    
-   『p!id/ معلومات عن حسابك』
-   『p!2id / معلومات عن الحساب في صوره』
-   『p!embed/ يكرر كلامك بمبيد』
-   『p!sug/ الإقتراحات』
-   『p!roles/ يطلع الرتب』
-   『p!roles-n يعطيك الرتب بالترتيب』
-   『p!server/ معلومات عن السيرفر』
-   『p!image/ يعرض صوره السيرفر』
-   『p!avatar/ يعرض صورتك او صوره شخص』
-   『p!dt/يعرض لك الوقت والتاريخ واليوم 』
-   『p!invites/ يعرض كم ضياف 』
-   『p!topinvite/ لعرض قائمه فيها كل واحد ضاف كم 』
-   『p!zalgo / يزخرف لك شي تكتب لازم يكون انقليزي مو عربي』
-   『p!draw / يكرر الكلام في صوره』
-   『p!say / يكرر الكلام لتكتب』
-   『p!translate / يترجم』
-   『p!botserver / يحطيك سرفرات البوت بترتيب』
+   『+id/ معلومات عن حسابك』
+   『+2id / معلومات عن الحساب في صوره』
+   『+embed/ يكرر كلامك بمبيد』
+   『+sug/ الإقتراحات』
+   『+roles/ يطلع الرتب』
+   『+roles-n يعطيك الرتب بالترتيب』
+   『+server/ معلومات عن السيرفر』
+   『+image/ يعرض صوره السيرفر』
+   『+avatar/ يعرض صورتك او صوره شخص』
+   『+dt/يعرض لك الوقت والتاريخ واليوم 』
+   『+invites/ يعرض كم ضياف 』
+   『+topinvite/ لعرض قائمه فيها كل واحد ضاف كم 』
+   『+zalgo / يزخرف لك شي تكتب لازم يكون انقليزي مو عربي』
+   『+draw / يكرر الكلام في صوره』
+   『+say / يكرر الكلام لتكتب』
+   『+translate / يترجم』
+   『+botserver / يحطيك سرفرات البوت بترتيب』
   
    
            Administrative Commands
    
  
-   『p!ct /انشاء روم كتابي』
-   『p!cv /انشاء روم صوتي』
-   『p!delet / مسح روم』
-   『p!clear / لمسح الشات』
-   『p!roles / لرؤيه رتب في سيرفر』
+   『+ct /انشاء روم كتابي』
+   『+cv /انشاء روم صوتي』
+   『+delet / مسح روم』
+   『+clear / لمسح الشات』
+   『+roles / لرؤيه رتب في سيرفر』
            Bot Commands
   
-   『p!ping/ يعرض لك سرعه اتصال البوت』
-   『p!uptime/ يعرض لك صار للبوت كم شغال』
-   『p!invite/ اضافه البوت』
-   『p!mb/ حاله الاعضاء』
-   『p!bot/ معلومات عن البوت』
+   『+ping/ يعرض لك سرعه اتصال البوت』
+   『+uptime/ يعرض لك صار للبوت كم شغال』
+   『+invite/ اضافه البوت』
+   『+mb/ حاله الاعضاء』
+   『+bot/ معلومات عن البوت』
    
               BC رسائل جماعيه
-   『p!bc1/❖ برودكاست + للكل + مطور 』
-   『p!bc2/❖ برودكاست + للكل + غير مطور』
-   『p!bc3/❖  برودكاست + للأونلاين + مع منشن + غير مطور』
-   『p!bc4/❖ برودكاست + للكل + مع منشن + غير مطور』
+   『+bc1/❖ برودكاست + للكل + مطور 』
+   『+bc2/❖ برودكاست + للكل + غير مطور』
+   『+bc3/❖  برودكاست + للأونلاين + مع منشن + غير مطور』
+   『+bc4/❖ برودكاست + للكل + مع منشن + غير مطور』
 
 
            Games Commands
     
-   『p!لعبه صراحه/صراحه』
-   『p!لعبه خواطر/خواطر 』
-   『p!يعطيك ذكر من الاذكار/ اذكار』
-   『p!يخيرك بين شي وشي / لو خيروك』
-   『p!يعطيك عقاب و لازم تنفذه/ عقاب』
-   『p!لعبه اسئله / كت』
-   『p!لعبة سرعة الكتابة/ سرعة』
-   『p!للعب لعبه فكك/ فكك』
-   『p!اسئلني』
+   『+لعبه صراحه/صراحه』
+   『+لعبه خواطر/خواطر 』
+   『+يعطيك ذكر من الاذكار/ اذكار』
+   『+يخيرك بين شي وشي / لو خيروك』
+   『+يعطيك عقاب و لازم تنفذه/ عقاب』
+   『+لعبه اسئله / كت』
+   『+لعبة سرعة الكتابة/ سرعة』
+   『+للعب لعبه فكك/ فكك』
+   『+اسئلني』
  
 
 
@@ -97,6 +97,7 @@ client.on("message", message => {
 
    『soon』
 
+  
 
 
 
@@ -108,7 +109,7 @@ client.on("message", message => {
    }
    });  
 client.on('message', message => {
-     if (message.content === (prefix + "p!help")) {
+     if (message.content === (prefix + "help")) {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#8650a7")
@@ -117,7 +118,7 @@ client.on('message', message => {
     }
 });
 client.on('message', message => {
-    var prefix = "p!"
+    var prefix = "+"
 var args = message.content.split(" ").slice(1);    
 if(message.content.startsWith(prefix + 'id')) {
 var year = message.author.createdAt.getFullYear()
@@ -169,7 +170,7 @@ message.channel.send({embed});
 
 });
 client.on('message', function(msg) {
-    if(msg.content.startsWith (prefix  + 'p!server')) {
+    if(msg.content.startsWith (prefix  + 'server')) {
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
       .setThumbnail(msg.guild.iconURL)
@@ -217,7 +218,7 @@ client.on('message', function(msg) {
 ]
 
  client.on('message', message => {
-   if (message.content.startsWith("p!كت تويت")) {
+   if (message.content.startsWith("كت تويت")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -290,7 +291,7 @@ const Sra7a = [
     'صراحه  |  ما هي أمنياتك المُستقبلية؟‏',
 ]
   client.on('message', message => {
-if (message.content.startsWith('p!صراحة')) {
+if (message.content.startsWith('صراحة')) {
     if(!message.channel.guild) return message.reply('** This command only for servers **');
  var client= new Discord.RichEmbed()
  .setTitle("لعبة صراحة ..")
@@ -304,7 +305,7 @@ if (message.content.startsWith('p!صراحة')) {
 }
 });
 client.on('message', message => {
-    if (message.content.startsWith("p!avatar")) {
+    if (message.content.startsWith("avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -320,7 +321,7 @@ client.on('message', message => {
     }
 });
 client.on('message', function(message) {
-    if(message.content.startsWith(prefix + 'p!roll')) {
+    if(message.content.startsWith(prefix + 'roll')) {
         let args = message.content.split(" ").slice(1);
         if (!args[0]) {
             message.channel.send('**حط رقم معين يتم السحب منه**');
@@ -334,7 +335,7 @@ client.on('message', function(message) {
     }
 });
 client.on('message', message => {
-if (message.content.startsWith("p!kick")) {
+if (message.content.startsWith("kick")) {
     var mention = message.mentions.members.first();
     if(!mention) return message.channel.send("يجب منشن العضو");
 
@@ -344,7 +345,7 @@ if (message.content.startsWith("p!kick")) {
 };
 });
 client.on('message', message => {
-if (message.content.startsWith("p!ban")) {
+if (message.content.startsWith("ban")) {
     var mention = message.mentions.members.first();
     if(!mention) return message.channel.send("يجب منشن العضو");
 
@@ -360,7 +361,7 @@ client.on('message', msg => {
   command = command.slice(prefix.length);
   let args = msg.content.split(" ").slice(1);
 
-    if(command === "p!clear") {
+    if(command === "clear") {
         const emoji = client.emojis.find("name", "wastebasket")
     let textxt = args.slice(0).join("");
     if(msg.member.hasPermission("MANAGE_MESSAGES")) {
@@ -377,7 +378,7 @@ client.on('message', msg => {
 }
 });
 client.on('message', message => {
-    if (message.content.startsWith("p!رابط")) {
+    if (message.content.startsWith("رابط")) {
 
   message.channel.createInvite({
         thing: true,
@@ -407,14 +408,14 @@ client.on('message', message => {
     }
 });
 client.on('message', message => {
-if (message.content.startsWith(prefix+"p!ct")) {
+if (message.content.startsWith(prefix+"ct")) {
     var args = message.content.split(" ").slice(1);
     var argrst = args.join(' ');
                 message.guild.createChannel(`${argrst}`, 'text')
       }
 });
 client.on('message', message => {
-if (message.content.startsWith(prefix+"p!cv")) {
+if (message.content.startsWith(prefix+"cv")) {
     var args = message.content.split(" ").slice(1);
     var argrst = args.join(' ');
                 message.guild.createChannel(`${argrst}`,'voice')
@@ -423,8 +424,8 @@ if (message.content.startsWith(prefix+"p!cv")) {
 });
 client.on('message', message => {
   if (true) {
-if (message.content === 'p!invite') {
-      message.author.send('https://discordapp.com/oauth2/authorize?client_id=452953540059463701&permissions=2087778359&scope=bot').catch(e => console.log(e.stack));
+if (message.content === 'invite') {
+      message.author.send('https://discordapp.com/api/oauth2/authorize?client_id=449359611036827663&permissions=8&scope=bot').catch(e => console.log(e.stack));
 
     }
    } 
@@ -432,7 +433,7 @@ if (message.content === 'p!invite') {
 
 
 client.on('message', message => {
-     if (message.content === "p!invite") {
+     if (message.content === "invite") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
@@ -449,7 +450,7 @@ client.on('message', message => {
     if (message.guild) {
    let embed = new Discord.RichEmbed()
     let args = message.content.split(' ').slice(1).join(' ');
-if(message.content.split(' ')[0] == prefix + 'p!bc1') {
+if(message.content.split(' ')[0] == prefix + 'bc1') {
     if (!args[1]) {
 return;
 }
@@ -467,7 +468,7 @@ return;
     }
 });
 client.on('message', message => {
-    if (message.content == "p!اسئلني") {
+    if (message.content == "+اسئلني") {
          message.react('🤔','👌')
         var x = ['اين يلعب مصطفي فتحي؟', 'ما هو اسم ملعب بارشالونة', 'ما هو يوم الحج الأكبر؟', 'ما هو أطول أنهار أوربا ؟', 'ما هو اسم بيت الدجاج', 'ما هو أول بنك قام بالنشاط المصرفي في السعودية عام 1926م' , 'ما هو أول جامع أقيم في مصر','ما هو أطول نهر في آسيا','ما هو أقرب كوكب إلى الشمس','ما هو الحيوان الذي يُسمى البهنس','ما هو اول مسجد أسس بالمدينة','متى وقع صلح الحديبية عام 6هـ او 3هـ او 2هـ؟','متى قامت أمريكا بأول رحلة فضائية','متى كانت غزوة خيبر؟','ما هي السورة التي تبدأ بقوله تعالى " يا أيها النبي اتق الله ولا تطع الكافرين والمنافقين إن الله كان عليما حكيما ".اجب؟','ما هي السورة التي يطلق عليها عروس القرآن','ماذا يسمى من لايقرأ ولايكتب','ماهي أول دولة استخدمت طابع البريد','ماهو شعار الولايات المتحدة الامريكية','ماهو اذكي الحيوانات','من هو مكتشف أمريكا','مامعنى "فرعون" اجب؟','ماهو اقرب كوكب إلى الارض','ما هي نسبه المياه من الكره الارضيه?','كم عدد السجدات في القرآن الكريم؟','من هو بطل كاس العالم في عام 1966','أين أفتتح اول متحف في العالم?','ماأسم أنثى الحمار?','كم تبلغ درجه حراره الشمس؟','من هي مدينة الضباب','أين توجد أطول سكة حديد في العالم?'
         ];
@@ -498,7 +499,7 @@ if (message.author.id === client.user.id) return;
 if (message.guild) {
 let embed = new Discord.RichEmbed()
 let args = message.content.split(' ').slice(1).join(' ');
-if(message.content.split(' ')[0] == prefix + 'p!bc2') {
+if(message.content.split(' ')[0] == prefix + 'bc2') {
 if(!message.channel.guild) return message.reply('**:x: اسف لكن هذا الامر للسيرفرات فقط **');         
 if (!args[1]) {
 return;
@@ -522,7 +523,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return;
 });
 client.on("message", message => {
 
-            if (message.content.startsWith(prefix + "p!bc3")) {
+            if (message.content.startsWith(prefix + "bc3")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
@@ -535,7 +536,7 @@ client.on("message", message => {
 });
 client.on("message", message => {
 
-            if (message.content.startsWith(prefix + "p!bc4")) {
+            if (message.content.startsWith(prefix + "bc4")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
@@ -557,7 +558,7 @@ client.on('message', message => {
     }
 });
    client.on('message', message => {
-       if (message.content.startsWith(prefix + 'p!botserver')) {
+       if (message.content.startsWith(prefix + 'botserver')) {
      let msg =  client.guilds.map(guild => `**${guild.name}** عدد الاعضاء: ${guild.memberCount}`).join('\n');
   let embed = new Discord.RichEmbed()
   .setTitle(`${client.guilds.size}سيرفرات `)
@@ -566,4 +567,4 @@ client.on('message', message => {
   message.channel.send(embed);
 }
 });
-client.login('NDUyOTUzNTQwMDU5NDYzNzAx.DfX1cg.eLiL58twgiarXK0yV6KSB7EiBA0');
+client.login('NDUyOTUzNTQwMDU5NDYzNzAx.DfYDgw.pI-UACfO9aaQgHE8a_18wx9vM9U');
